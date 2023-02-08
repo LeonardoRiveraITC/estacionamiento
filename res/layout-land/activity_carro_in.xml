@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.estac.CarroIn" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/plac"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/txtMar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/txtLug"
+        android:layout_alignTop="@+id/txtPlac"
+        android:layout_marginRight="86dp"
+        android:text="@string/place"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/btnIn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/save" />
+
+    <EditText
+        android:id="@+id/txtPlac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView1"
+        android:layout_toRightOf="@+id/textView1"
+        android:ems="10" />
+
+    <Spinner
+        android:id="@+id/spMar"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/txtMar"
+        android:layout_alignTop="@+id/spPay" />
+
+    <TextView
+        android:id="@+id/txtModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtlug"
+        android:layout_alignLeft="@+id/spPay"
+        android:text="@string/pay" />
+
+    <TextView
+        android:id="@+id/txtlug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spMar"
+        android:layout_alignLeft="@+id/btnIn"
+        android:text="@string/model"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Spinner
+        android:id="@+id/spMod"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <Spinner
+        android:id="@+id/spPay"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignTop="@+id/spMod" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spMar"
+        android:layout_alignLeft="@+id/spMar"
+        android:layout_marginLeft="26dp"
+        android:text="@string/brand"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/txtLug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtMar"
+        android:layout_toRightOf="@+id/spMod"
+        android:ems="10"
+        android:inputType="number" />
+
+</RelativeLayout>
